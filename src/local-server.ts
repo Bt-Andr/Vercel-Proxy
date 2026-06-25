@@ -8,7 +8,7 @@
 
 import http from "node:http";
 import { Readable } from "node:stream";
-import { handleProxy } from "./proxy";
+import { handleProxy } from "./proxy.js";
 
 type WebRequestInit = RequestInit & { duplex?: "half" };
 

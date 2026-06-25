@@ -5,7 +5,7 @@
  * an allow-list (PROXY_ALLOWED_ORIGINS) or "*", and optional credentials.
  */
 
-import type { Settings } from "./types";
+import type { Settings } from "./types.js";
 
 /** Decide the Access-Control-Allow-Origin value for a given request origin. */
 export function resolveAllowedOrigin(

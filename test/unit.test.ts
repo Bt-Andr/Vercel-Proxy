@@ -1,10 +1,10 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 
-import { parseSettings, parseSeedRoutes, type Env } from "../src/settings";
-import { resolveRoute, normalizeHost, type IncomingRequest } from "../src/router";
-import { parseOriginalPath } from "../src/proxy";
-import type { ResolvedConfig, RouteRecord } from "../src/types";
+import { parseSettings, parseSeedRoutes, type Env } from "../src/settings.js";
+import { resolveRoute, normalizeHost, type IncomingRequest } from "../src/router.js";
+import { parseOriginalPath } from "../src/proxy.js";
+import type { ResolvedConfig, RouteRecord } from "../src/types.js";
 
 /** Build a ResolvedConfig from env the same way resolveConfig() does. */
 function resolved(env: Env): ResolvedConfig {

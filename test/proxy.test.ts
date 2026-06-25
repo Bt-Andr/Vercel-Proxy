@@ -3,8 +3,8 @@ import assert from "node:assert/strict";
 import http from "node:http";
 import type { AddressInfo } from "node:net";
 
-import { handleProxy } from "../src/proxy";
-import { resetConfigCache } from "../src/store";
+import { handleProxy } from "../src/proxy.js";
+import { resetConfigCache } from "../src/store.js";
 
 // A tiny echo backend that reports what it received.
 let server: http.Server;

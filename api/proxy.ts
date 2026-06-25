@@ -6,7 +6,7 @@
  * response bodies. All paths are routed here via the rewrite in vercel.json.
  */
 
-import { handleProxy } from "../src/proxy";
+import { handleProxy } from "../src/proxy.js";
 
 export default {
   fetch(request: Request): Promise<Response> {

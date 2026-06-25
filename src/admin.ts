@@ -12,10 +12,10 @@
  * so a misconfigured production deploy is never left wide open.
  */
 
-import type { ResolvedConfig, RouteRecord } from "./types";
-import { getStore, invalidateRouteCache } from "./store";
-import { makeRoute } from "./settings";
-import { safeEqual } from "./util";
+import type { ResolvedConfig, RouteRecord } from "./types.js";
+import { getStore, invalidateRouteCache } from "./store.js";
+import { makeRoute } from "./settings.js";
+import { safeEqual } from "./util.js";
 
 const ADMIN_BASE = "/__proxy/admin";
 const KEY_PATTERN = /^[A-Za-z0-9._-]+$/;

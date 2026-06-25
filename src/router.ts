@@ -9,7 +9,7 @@
  * Pure module: no I/O, fully unit-testable.
  */
 
-import type { ResolvedConfig, RouteRecord } from "./types";
+import type { ResolvedConfig, RouteRecord } from "./types.js";
 
 export interface IncomingRequest {
   /** Host header, lower-cased (may include a port). */

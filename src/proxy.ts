@@ -6,13 +6,13 @@
  * response back with clean headers + CORS.
  */
 
-import type { ResolvedConfig, RouteRecord, Settings } from "./types";
-import { resolveConfig, getStore } from "./store";
-import { resolveRoute, type IncomingRequest } from "./router";
-import { buildUpstreamHeaders, buildDownstreamHeaders } from "./headers";
-import { applyCorsHeaders, buildPreflightResponse } from "./cors";
-import { handleAdmin } from "./admin";
-import { safeEqual } from "./util";
+import type { ResolvedConfig, RouteRecord, Settings } from "./types.js";
+import { resolveConfig, getStore } from "./store.js";
+import { resolveRoute, type IncomingRequest } from "./router.js";
+import { buildUpstreamHeaders, buildDownstreamHeaders } from "./headers.js";
+import { applyCorsHeaders, buildPreflightResponse } from "./cors.js";
+import { handleAdmin } from "./admin.js";
+import { safeEqual } from "./util.js";
 
 /** Methods we'll safely retry (idempotent and bodyless). */
 const RETRYABLE_METHODS = new Set(["GET", "HEAD", "OPTIONS"]);

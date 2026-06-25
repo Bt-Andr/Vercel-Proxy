@@ -3,8 +3,8 @@ import assert from "node:assert/strict";
 import http from "node:http";
 import type { AddressInfo } from "node:net";
 
-import { MemoryStore, UpstashStore, resolveConfig, resetConfigCache } from "../src/store";
-import type { RouteRecord } from "../src/types";
+import { MemoryStore, UpstashStore, resolveConfig, resetConfigCache } from "../src/store.js";
+import type { RouteRecord } from "../src/types.js";
 
 function route(key: string, target: string): RouteRecord {
   return { key, target, stripPrefix: true };

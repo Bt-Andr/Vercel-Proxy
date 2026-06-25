@@ -6,7 +6,7 @@
  * an empty store and as a zero-dependency fallback for local dev.
  */
 
-import type { Settings, RouteRecord } from "./types";
+import type { Settings, RouteRecord } from "./types.js";
 
 export type Env = Record<string, string | undefined>;
 

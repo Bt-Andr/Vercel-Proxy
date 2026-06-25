@@ -14,8 +14,8 @@
  * seed an empty Upstash store on first read.
  */
 
-import type { RouteRecord, ResolvedConfig, Settings } from "./types";
-import { getSettings, resetSettingsCache, type Env } from "./settings";
+import type { RouteRecord, ResolvedConfig, Settings } from "./types.js";
+import { getSettings, resetSettingsCache, type Env } from "./settings.js";
 
 const HASH_KEY = "proxy:routes";
 const CACHE_TTL_MS = 30_000;
